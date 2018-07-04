@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+  </title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 main_panel">
+        <h2 style="margin-top: 20px">Leistungsbericth KW
+          <%= weekNumber %>/
+            <%= Year %>
+        </h2>
+        <table class="table table-bordered" style="margin-top: 50px">
+          <tbody>
+            <tr>
+              <td>
+                <b>Customer: DAS Freeform technalogies</b>
+              </td>
+              <td>
+
+                <b>Exporting: Nithya Sumanth</b>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <b>Project:
+                  <%= project %>
+                </b>
+              </td>
+              <td>
+                <b>Contact person:
+                  <%= contactPerson %>
+                </b>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <h2 style="margin-top: 40px">Activity Description</h2>
+        <table class="table" style="margin-top:10px">
+          <thead>
+            <tr>
+              <th scope="col">Art</th>
+              <th scope="col">Date</th>
+              <th scope="col">Start</th>
+              <th scope="col">End</th>
+              <th scope="col">Pause</th>
+              <th scope="col">hh:mm</th>
+              <th scope="col">Gesamt</th>
+              <th scope="col">Activity Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% for(var i in dates) {%>
+              <tr>
+                <td>
+                </td>
+                <td>
+                  <span><%= dates[i].date %></span>
+                </td>
+                <td>
+                  <div class="form-group">
+                    <input type="text" class="form-control">
+                  </div>
+                </td>
+                <td>
+                  <div class="form-group">
+                    <input type="text" class="form-control">
+                  </div>
+                </td>
+                <td>
+                  <div class="form-group">
+                    <input type="text" class="form-control">
+                  </div>
+                </td>
+                <td>
+                  <div class="form-group">
+                    <input type="text" class="form-control">
+                  </div>
+                </td>
+                <td>
+                  <div class="form-group">
+                    <input type="text" class="form-control">
+                  </div>
+                </td>
+                <td>
+                  <div class="form-group">
+                    <input type="text" class="form-control">
+                  </div>
+                </td>
+
+              </tr>
+              <% } %>
+
+
+                <tr>
+                  <td colspan="5">
+                    Faltu Text
+                  </td>
+                  <td>
+                    Total:
+                  </td>
+
+                  <td>
+                    38.50h
+                  </td>
+
+                </tr>
+
+          </tbody>
+
+        </table>
+        <table class="table table-bordered">
+          <tbody>
+            <tr>
+              <td>Place:</td>
+              <td>Kormangla Bangalore</td>
+            </tr>
+            <tr>
+              <td>Date:</td>
+              <td>02/07/2018</td>
+            </tr>
+            <tr>
+              <td>Signature Executive</td>
+              <td>Nithya Sumanth</td>
+            </tr>
+            <tr>
+              <td>Signature Beneficiaries</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
